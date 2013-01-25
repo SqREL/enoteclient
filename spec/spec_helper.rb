@@ -1,0 +1,2 @@
+require 'enoteclient'
+require 'rspec'
