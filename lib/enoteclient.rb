@@ -5,6 +5,7 @@ lib += '/enoteclient/'
 
 require lib + 'version'
 require lib + 'resource'
+require lib + 'enoteclient'
 
 Dir["#{File.dirname(__FILE__)}/enoteclient/resource/*.rb"].each do |resource|
   begin

@@ -5,10 +5,10 @@ module EnoteClient
   class Resource
     attr_reader :url, :api_key
 
-    def initialize url, api_key
-      @api_key = api_key
+    def initialize params
+      @api_key = params[:api_key]
 
-      Note.site = url
+      Note.site = params[:url]
     end
 
     def all

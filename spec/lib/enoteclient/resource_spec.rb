@@ -4,7 +4,10 @@ describe EnoteClient::Resource do
 
   before(:all) do
     # NOTE: You should allready have user in main app to pass this tests
-    @resource = EnoteClient::Resource.new("http://localhost:3000", "9b995e723802c0847edde3d46d462e9b")
+    @resource = EnoteClient::Resource.new(
+      url: "http://enote-app.herokuapp.com",
+      api_key: "9bb899bcffd6c5a0edb5c101bf86d366"
+    )
 
     @note   = { "body"=>"Lorem ipsum", "title"=>"Test title" }
   end
